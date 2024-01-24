@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5efec;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.flexContainer {
+  display: flex; /* Set to flex to enable flexbox layout */
+  justify-content: center; /* Center the children horizontally */
+  align-items: center; /* Center the children vertically */
+  width: 100%; /* Set the width as needed */
+  /* Add any additional styling as needed */
+  border: 1.5px solid red;
+}
+
+.mainContainer {
+  /* border-radius: 10px; */
+  padding: 2vw;
+  /* Add dimensions if needed, for example: */
+  width: 80vw;
+  height: 80vh;
+  font-family: "Space Grotesk", sans-serif;
+  margin-right: 20px;
+}
+
+.mainHead {
+  font-size: 5vh;
+}
+
+.menuOptions {
+  font-size: 2vh;
+  padding: 1vw;
+}
+
+.menuOptions a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.rightSideContainer {
+  background-color: red;
+  width: 10vw;
+  color: black;
+}
