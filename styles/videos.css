@@ -16,16 +16,21 @@ body {
   min-height: 100vh;
   width: 70vw;
   margin: 0 auto;
+  background-color: #000; /* Assuming you want a black background for the whole page */
+  color: #fff; /* Better readability on a black background */
 }
 
 .flexContainer {
   display: flex; /* Set to flex to enable flexbox layout */
   justify-content: center; /* Center the children horizontally */
-  align-items: center; /* Center the children vertically */
+
   width: 80vw; /* Set the width as needed */
   /* Add any additional styling as needed */
   border: 1.5px solid red;
   height: 80vh;
+  flex-wrap: wrap; /* Wrap the children to the next line if needed */
+  max-height: 100vh;
+  overflow: auto; /* Add scrollbars if needed */
 }
 
 .mainContainer {
@@ -55,6 +60,17 @@ body {
 .rightSideContainer {
   width: 50%;
   text-align: center;
+  display: flex; /* Set to flex to enable flexbox layout */
+  flex-direction: column; /* Stack the children vertically */
+  align-items: center; /* Center the children horizontally */
+  justify-content: flex-start; /* Align the children to the top */
+  padding-top: 20px;
+}
+.rightSideContainer iframe {
+  max-width: 90%; /* Set a max-width for desktop viewing */
+  margin-bottom: 20px; /* Add space between videos */
+  aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
+  height: auto; /* Height will adjust automatically */
 }
 
 #profile {
@@ -65,7 +81,8 @@ body {
   .flexContainer {
     flex-direction: column; /* Stack flex items vertically on small screens */
     align-items: center; /* Center items horizontally since now the flex direction is column */
-    height: 80vh;
+    height: auto; /* Height should grow with the content */
+    padding: 10px; /* Add some padding */
   }
 
   .mainContainer,
@@ -75,7 +92,7 @@ body {
   }
 
   #profile {
-    width: 60vw; /* Increase the size of the profile picture */
+    width: 80vw; /* Adjust to desired width */
     margin-top: 20px; /* Add some space above the profile picture */
   }
 }
