@@ -21,6 +21,21 @@ document.addEventListener("DOMContentLoaded", function () {
     "/content/alex18.jpg",
     "/content/alex19.jpg",
     "/content/alex20.jpg",
+    "/content/alex21.jpg",
+    "/content/alex22.jpeg",
+    "/content/alex23.jpeg",
+    "/content/alex24.jpg",
+    "/content/alex25.jpg",
+    "/content/alex26.jpg",
+    "/content/alex27.jpg",
+    "/content/alex28.jpg",
+    "/content/alex29.jpg",
+    "/content/alex30.jpeg",
+    "/content/alex31.jpg",
+    "/content/alex32.jpg",
+    "/content/alex33.jpg",
+    "/content/alex34.jpg",
+    "/content/alex35.jpeg",
   ];
   let currentImageIndex = 0;
 

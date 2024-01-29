@@ -29,8 +29,9 @@ body {
   border: 1.5px solid red;
   height: 80vh;
   flex-wrap: wrap; /* Wrap the children to the next line if needed */
-  max-height: 100vh;
+  /* max-height: 100vh; */
   overflow: auto; /* Add scrollbars if needed */
+  margin-top: 2vh;
 }
 
 .mainContainer {
